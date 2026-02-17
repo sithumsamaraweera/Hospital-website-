@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    font-family: sans-serif,Georgia, 'Times New Roman', Times, serif;
+}
+
+nav{
+    background-color: rgb(119, 180, 234);
+    box-shadow: 3px 3px 5px rgba(1,1,1,1,1);
+    border: .1rem solid;
+    border-color: rgb(6, 74, 175);
+    display: flex;/*logo aling menu ekai aling karmme(ekA row ehekata genawa*/
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+.logo{
+    height:60px;
+    width: auto;
+    border-radius: 50px;
+l}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    margin:0;
+    padding: 0;
+}
+nav li{
+    height: 50px;
+    font-weight:bold;
+    font-family: sans-serif,Georgia, 'Times New Roman', Times, serif;
+}
+nav a{
+    height:100px;
+    padding:0 30px;
+    text-decoration:none;
+    align-items: center;
+    color: rgb(231, 231, 234);
+}
+nav a:hover{ background-color: ;}
+.hospital{
+    background-image: url(bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+.hero-section{
+    position: relative;
+    width:100%;
+    height: 600px;;/*oni nam wenas karanna*/
+    background-image: url(bg1.jpg);
+    background-size:cover;
+    background-position:center;
+}
+
+.welcome{
+    position:absolute;/*meken thama text aka ganne imag ke udata*/
+    top:50%;/*50% dapuwama tex eka img eke maddata enawa*/
+    left:50%;/* kerole idala dakunu pattata  enawa*/
+    transform:translate(-50%,-50%);/*meken hariyaatama uda yata nogihilla (100%ma cene) madata enawa */
+    text-align:center;
+    color: #000;
+    background:rgba(11, 117, 215, 0.5);
+    padding: 20px;
+    border-radius: 15px;/*text box eke kon rawm karannawa*/
+    width: 70%;
+    
+}
+.about{
+    top: 50%;
+    left: 20%;
+    text-align: justify;
+    background-color: paleturquoise;
+    padding: 20px;
+    border-radius: 20px;
+}
+.treatments{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: auto;
+    margin: auto;
+}
+.clinic-card{
+    background: paleturquoise;
+    padding: 20px;
+    border-radius: 12px;
+    height: 180px;
+    display: flex;
+    align-items: center;/*thiraswa center aling karanaea*/
+    justify-content: center;/*siraswa center aling karanawa*/
+    transition: transform 0.3s background 0.3s;
+}
+.clinic-card: :hover{
+    transform: translateY(-5px);
+    background: #5fcfe7;
+}
+.clinic-card img{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;/*images videos athulta daddi cut o crop wene natiwa danna puluwam*/
+}
+.clinic-appointment{
+  max-width: 400px;
+  height: auto;
+  margin: 20px auto;
+  background: paleturquoise;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.clinic-form {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.clinic-form input
+.clinic-form select
+.clinic-form textarea{ 
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.clinic-form button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background: #4da6ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-container {
+  background-image: url(bg4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+  border-radius: 15px;
+  width: 80%;
+  margin: auto;
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback input,
+.feedback textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #a6c8ff;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.feedback button {
+  padding: 12px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.contact-info{
+    text-align: left;
+    margin: 0 auto;
+    width: 60%;
+  
+}
+.contact-info h3 {
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+}
+
+/* Responsive for phone screen */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr; /* one column */
+  }
